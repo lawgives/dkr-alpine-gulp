@@ -8,4 +8,4 @@ WORKDIR /usr/src/web
 
 ENV HOME /usr/src/web
 
-CMD ["bash"]
+CMD ["gulp"]
