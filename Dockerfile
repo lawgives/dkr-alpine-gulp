@@ -12,6 +12,7 @@ RUN apk add --no-cache --update \
   && pip install virtualenv
 
 RUN npm install -g gulp@3.9.1
+RUN npm install -g nucleus-styleguide
 
 WORKDIR /usr/src/web
 
