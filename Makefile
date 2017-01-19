@@ -1,6 +1,6 @@
 # Makefile for creating container file
 # Override these with environmental variables
-VERSION?=3.9.1
+VERSION?=3.9.1-legalio-1
 
 ### Do not override below
 
