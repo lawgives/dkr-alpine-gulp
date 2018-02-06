@@ -1,6 +1,4 @@
-FROM mhart/alpine-node:4.4
-#FROM mhart/alpine-node:6.2
-
+FROM node:9.5.0-alpine
 MAINTAINER Ho-Sheng Hsiao <hosh@legal.io>
 
 # We need python for gyp
@@ -12,9 +10,10 @@ RUN apk add --no-cache --update \
     build-base \
   && pip install virtualenv
 
-RUN npm install -g gulp@3.9.1
-RUN npm install -g bower@1.8.0
-RUN npm install -g nucleus-styleguide
+RUN yarn global add gulp@3.9.1
+RUN yarn global add bower@1.8.0
+RUN yarn global add nucleus-styleguide
+RUN yarn global add node-gyp
 
 WORKDIR /usr/src/web
 
