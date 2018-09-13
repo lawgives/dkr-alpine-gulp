@@ -1,4 +1,4 @@
-FROM node:10.7.0-alpine
+FROM node:10.10.0-alpine
 MAINTAINER Ho-Sheng Hsiao <hosh@legal.io>
 
 # We need python for gyp
